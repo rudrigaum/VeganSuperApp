@@ -1,0 +1,46 @@
+# Arquivos de Sistema
+.DS_Store
+
+# Diretórios de Build
+build/
+DerivedData/
+
+# Arquivos de Projeto Xcode
+*.xcodeproj
+*.xcworkspace
+!default.xcodeproj/project.xcworkspace
+!default.xcworkspace
+xcuserdata/
+
+# Swift Package Manager
+.swiftpm/
+# Exclui o diretório de arquivos de build, mas mantém o arquivo de lock
+# que é crucial para garantir que todos os desenvolvedores usem a mesma versão das dependências.
+.swiftpm/
+!Package.resolved
+
+# Dependências (se usar)
+Pods/
+Carthage/
+Carthage/Build/
+
+# Arquivos de Módulos Swift
+*.swiftmodule
+*.swiftdoc
+
+# Arquivos de Testes
+# Ignora caches de testes e arquivos temporários.
+.cache/
+.test_data/
+
+# Secrets (Chaves de API)
+# É uma boa prática ignorar arquivos que contêm informações sensíveis.
+# Crie um arquivo para suas chaves de API e inclua-o aqui.
+Secrets.plist
+Keys.xcconfig
+APIKeys.swift
+
+# Outros
+# Arquivos gerados por ferramentas como Fastlane.
+fastlane/report.html
+fastlane/screenshots/
