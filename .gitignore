@@ -39,6 +39,7 @@ Carthage/Build/
 Secrets.plist
 Keys.xcconfig
 APIKeys.swift
+Secrets.xcconfig
 
 # Outros
 # Arquivos gerados por ferramentas como Fastlane.
