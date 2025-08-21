@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186AE8EB2E57D80A00EC3FE5 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 186AE8EA2E57D80A00EC3FE5 /* Secrets.xcconfig */; };
 		18C7942A2C9AC3FC008A09E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C794292C9AC3FC008A09E0 /* AppDelegate.swift */; };
 		18C7942C2C9AC3FC008A09E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7942B2C9AC3FC008A09E0 /* SceneDelegate.swift */; };
 		18C7942E2C9AC3FC008A09E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7942D2C9AC3FC008A09E0 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186AE8EA2E57D80A00EC3FE5 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		18C794262C9AC3FC008A09E0 /* VeganSuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeganSuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C794292C9AC3FC008A09E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C7942B2C9AC3FC008A09E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,12 @@
 		18C7944A2C9AC3FD008A09E0 /* VeganSuperAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganSuperAppUITests.swift; sourceTree = "<group>"; };
 		18C7944C2C9AC3FD008A09E0 /* VeganSuperAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganSuperAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		186AE8E02E57D21D00EC3FE5 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		186AE8E52E57D37F00EC3FE5 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		186AE8EC2E57D96300EC3FE5 /* Utils */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utils; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		18C794232C9AC3FC008A09E0 /* Frameworks */ = {
@@ -97,12 +105,16 @@
 		18C794282C9AC3FC008A09E0 /* VeganSuperApp */ = {
 			isa = PBXGroup;
 			children = (
+				186AE8EC2E57D96300EC3FE5 /* Utils */,
+				186AE8E52E57D37F00EC3FE5 /* Models */,
+				186AE8E02E57D21D00EC3FE5 /* Services */,
 				18C794292C9AC3FC008A09E0 /* AppDelegate.swift */,
 				18C7942B2C9AC3FC008A09E0 /* SceneDelegate.swift */,
 				18C7942D2C9AC3FC008A09E0 /* ViewController.swift */,
 				18C794322C9AC3FD008A09E0 /* Assets.xcassets */,
 				18C794342C9AC3FD008A09E0 /* LaunchScreen.storyboard */,
 				18C794372C9AC3FD008A09E0 /* Info.plist */,
+				186AE8EA2E57D80A00EC3FE5 /* Secrets.xcconfig */,
 			);
 			path = VeganSuperApp;
 			sourceTree = "<group>";
@@ -138,6 +150,11 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				186AE8E02E57D21D00EC3FE5 /* Services */,
+				186AE8E52E57D37F00EC3FE5 /* Models */,
+				186AE8EC2E57D96300EC3FE5 /* Utils */,
 			);
 			name = VeganSuperApp;
 			productName = VeganSuperApp;
@@ -230,6 +247,7 @@
 			files = (
 				18C794332C9AC3FD008A09E0 /* Assets.xcassets in Resources */,
 				18C794362C9AC3FD008A09E0 /* Base in Resources */,
+				186AE8EB2E57D80A00EC3FE5 /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +324,7 @@
 /* Begin XCBuildConfiguration section */
 		18C7944E2C9AC3FD008A09E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186AE8EA2E57D80A00EC3FE5 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -369,6 +388,7 @@
 		};
 		18C7944F2C9AC3FD008A09E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186AE8EA2E57D80A00EC3FE5 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -425,6 +445,7 @@
 		};
 		18C794512C9AC3FD008A09E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186AE8EA2E57D80A00EC3FE5 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +473,7 @@
 		};
 		18C794522C9AC3FD008A09E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186AE8EA2E57D80A00EC3FE5 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -479,6 +501,7 @@
 		};
 		18C794542C9AC3FD008A09E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186AE8EA2E57D80A00EC3FE5 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,6 +522,7 @@
 		};
 		18C794552C9AC3FD008A09E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186AE8EA2E57D80A00EC3FE5 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +543,7 @@
 		};
 		18C794572C9AC3FD008A09E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186AE8EA2E57D80A00EC3FE5 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +562,7 @@
 		};
 		18C794582C9AC3FD008A09E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186AE8EA2E57D80A00EC3FE5 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
